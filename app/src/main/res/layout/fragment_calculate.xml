@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mealcalculator.pranto.mealcalculator.CalculateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="40dp"
+        android:layout_gravity="center">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:errorEnabled="true"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@android:color/white">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/bazar_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:errorEnabled="true"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@android:color/white">
+            <EditText
+                android:id="@+id/bazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:inputType="numberDecimal"
+                android:hint="Bazar"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/meal_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:errorEnabled="true"
+            android:layout_marginBottom="30dp"
+            android:textColorHint="@android:color/white">
+            <EditText
+                android:id="@+id/meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:inputType="numberDecimal"
+                android:hint="Meal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/done_button"/>
+        <Button
+            android:id="@+id/calculate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Calculate"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/calculate_button"/>
+
+    </LinearLayout>
+
+</FrameLayout>
