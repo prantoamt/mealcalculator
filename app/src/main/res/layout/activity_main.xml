@@ -5,9 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
     android:id="@+id/drawerlayout"
     tools:context="com.mealcalculator.pranto.mealcalculator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
@@ -16,6 +23,7 @@
 
     </android.support.v4.view.ViewPager>
 
+    </LinearLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navview"
@@ -26,5 +34,6 @@
         app:menu="@menu/menu">
 
     </android.support.design.widget.NavigationView>
+
 
 </android.support.v4.widget.DrawerLayout>

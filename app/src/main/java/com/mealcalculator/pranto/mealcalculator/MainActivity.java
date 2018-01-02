@@ -14,6 +14,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import java.io.File;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public double meal_rate;
     ArrayList<PersonInfo> list;
     SectionsStatePagerAdapter adapter;
+    Toolbar mtoolbar;
 
 
     @Override
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void getContent()
     {
         list = new ArrayList<>();
+        mtoolbar = (Toolbar) findViewById(R.id.nav_action);
+        setSupportActionBar(mtoolbar);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
         vp = (ViewPager) findViewById(R.id.viewpager);
         mtoggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
@@ -83,6 +87,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (item.getItemId() == R.id.calculate_meal)
         {
             vp.setCurrentItem(1);
+        }
+        if(item.getItemId() == R.id.desktop_version)
+        {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://prantoamt.wordpress.com/2016/02/26/meal-calculator-software/"));
+            startActivity(i);
         }
 
         if(item.getItemId() == R.id.share)

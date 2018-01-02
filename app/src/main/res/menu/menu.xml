@@ -8,6 +8,9 @@
         <item android:id="@+id/calculate_meal"
             android:title="Calculate Meal" />
 
+        <item android:id="@+id/desktop_version"
+            android:title="Get Desktop Version"/>
+
         <item android:id="@+id/share"
             android:icon="@mipmap/ic_share_black_24dp"
             android:title="Share"/>

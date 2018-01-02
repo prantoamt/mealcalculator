@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="140dp"
-    android:background="@android:color/holo_blue_light"
+    android:layout_height="150dp"
+    android:background="@drawable/header_background"
     android:gravity="center_vertical"
     android:orientation="vertical"
     >
@@ -10,5 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="italic"
         android:text="Meal Calculator"/>
 </LinearLayout>
