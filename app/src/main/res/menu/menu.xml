@@ -6,9 +6,11 @@
             android:title="Home" />
 
         <item android:id="@+id/calculate_meal"
+            android:icon="@mipmap/ic_exposure_black_24dp"
             android:title="Calculate Meal" />
 
         <item android:id="@+id/desktop_version"
+            android:icon="@mipmap/ic_computer_black_24dp"
             android:title="Get Desktop Version"/>
 
         <item android:id="@+id/share"
