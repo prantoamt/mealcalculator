@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class HomeFragment extends Fragment {
 
@@ -32,6 +35,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         lv = (LinearLayout) view.findViewById(R.id.lv1);
+
         txt1 = new TextView(((MainActivity)getActivity()).getApplicationContext());
         txt1.setText("Hello, Welcome to Pranto's Meal Calculator. This Documentation will " +
                 "help you to use the Calculator properly. First of all, swipe the menu bar from " +
