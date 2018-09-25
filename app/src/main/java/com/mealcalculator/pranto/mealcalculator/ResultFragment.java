@@ -52,7 +52,7 @@ public class ResultFragment extends Fragment {
         {
             tr = new TableRow(context);
             name_field = new TextView(context);
-            name_field.setBackgroundColor(Color.YELLOW);
+            name_field.setBackgroundColor(Color.parseColor("#808080"));
             name_field.setTextColor(Color.BLACK);
             name_field.setText(((MainActivity)getActivity()).list.get(i).getName());
             name_field.setGravity(Gravity.CENTER);
@@ -66,7 +66,7 @@ public class ResultFragment extends Fragment {
             bazar_field = new TextView(context);
             bazar_field.setText(String.format("%.2f", ((MainActivity)getActivity()).list.get(i).getBazar()));
             bazar_field.setGravity(Gravity.CENTER);
-            bazar_field.setBackgroundColor(Color.GRAY);
+            bazar_field.setBackgroundColor(Color.parseColor("#808080"));
             bazar_field.setTextColor(Color.BLACK);
             bazar_field.setPadding(5,5,5,5);
             will_get_field = new TextView(context);
@@ -78,7 +78,7 @@ public class ResultFragment extends Fragment {
             will_pay_field = new TextView(context);
             will_pay_field.setText(String.format("%.2f", ((MainActivity)getActivity()).list.get(i).getWill_pay()));
             will_pay_field.setGravity(Gravity.CENTER);
-            will_pay_field.setBackgroundColor(Color.YELLOW);
+            will_pay_field.setBackgroundColor(Color.parseColor("#808080"));
             will_pay_field.setTextColor(Color.BLACK);
             will_pay_field.setPadding(5,5,5,5);
             tr.addView(name_field);
