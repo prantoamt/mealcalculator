@@ -10,8 +10,8 @@
  that helps us to calculate monthly meal costs of each persons easily.
 
 ## Features:
- * We can calculate monthly meals
- * This app will show results (Name, Bazar, Total meal of that person, how much money he/she will get, how much money he/she will pay) in a tabular format.
+ * Calculate monthly meals
+ * Shows results (Name, Bazar, Total meal of that person, how much money he/she will get, how much money he/she will pay) in a tabular format.
  
 ## How to Use?
   * You have to maintain a paper/sheet to keep trace of your hostle members costs & meals.
