@@ -1,5 +1,5 @@
 
-<img src="Images/Menu.png" width = "200">
+<img align="center" src="Images/Menu.png" width = "200">
 
 # mealcalculator  
 ##### An android app which can calculate the monthly meal rate
@@ -15,13 +15,13 @@
  
 ## How to Use?
   * You have to maintain a paper/sheet to keep trace of your hostle members costs & meals.
-  * <img src="Images/Meal_sheet.PNG" width = "150">
+  * <img align="center" src="Images/Meal_sheet.PNG" width = "150">
   * The read marked number indicates the number of meal eaten by that person in a single day. At the end of the month, we will have the total number of meals eaten by every person.
   * Now, opon the app, Goto to **calculate meal** tab.
   * Put every persons/members info separately and press **submit** button.
-  * <img src="Images/Calculate.png" width = "150">
+  * <img align="center" src="Images/Calculate.png" width = "150">
   * Once you are done with submitting info of every members, press **calculate** Button. It will show you the result.
-  * <img src="Images/Result.png" width = "150">
+  * <img align="center" src="Images/Result.png" width = "150">
   
 ## How to open it?
   * Create a new folder
